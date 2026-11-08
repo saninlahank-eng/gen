@@ -1,0 +1,15 @@
+# Tangerine Gen v3.0 — dependencies
+# Install all: pip install -r requirements.txt
+
+# Core HTTP
+requests>=2.28.0
+
+# Critical: Chrome TLS fingerprint — without this Discord detects the Python stack
+# and flags every registration. Railway/Render/VPS support this fully.
+tls-client>=0.2.2
+
+# Discord bot
+py-cord>=2.4.1
+
+# Optional: nicer terminal colors (auto-works on Linux without it)
+colorama>=0.4.6
